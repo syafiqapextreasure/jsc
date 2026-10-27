@@ -8,6 +8,10 @@ test('every shoe starts with the full image and close-up controls remain usable'
    await page.goto('/kasut/'+slug);
    const photo=page.locator('.gallery-main img');
    await expect(photo).toHaveCSS('object-fit','contain');
+   await photo.evaluate(img=>img.decode());
+   const bounds=await photo.evaluate(img=>({image:img.getBoundingClientRect().height,frame:img.parentElement.getBoundingClientRect().height,ratio:img.getBoundingClientRect().width/img.getBoundingClientRect().height,intrinsic:img.naturalWidth/img.naturalHeight}));
+   expect(Math.abs(bounds.frame-bounds.image),slug).toBeLessThan(3);
+   expect(Math.abs(bounds.ratio-bounds.intrinsic),slug).toBeLessThan(.01);
    await expect(page.getByRole('button',{name:'Gambar penuh'})).toHaveAttribute('aria-pressed','true');
    await expect(page.locator('.gallery-main')).not.toHaveClass(/zoomed|textured/);
   }
