@@ -6,6 +6,7 @@ for(const width of [320,390,768,1440,2560]) {
   for(const route of ['/','/shop','/padang','/padang/tf','/jenama','/kasut/mint-speed','/kasut/red-gold','/cart','/pesanan','/panduan-saiz','/tentang-kami','/bantuan']){
    const response=await page.goto(route);expect(response.status()).toBe(200);
    await page.evaluate(()=>document.fonts.ready);
+   await page.locator('img').evaluateAll(async images=>{images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode().catch(()=>{})))});
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${route} overflows at ${width}`).toBe(true);
    const broken=await page.locator('img').evaluateAll(images=>images.filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src));expect(broken).toEqual([]);
    if(['/','/shop','/kasut/mint-speed'].includes(route))await page.screenshot({path:`test-results/${width}-${route==='/'?'home':route.replaceAll('/','-')}.png`,fullPage:true});
@@ -60,4 +61,3 @@ test('WhatsApp follows cross-tab edits and empty cart can clear personal details
  await second.getByRole('button',{name:'Kosongkan maklumat tersimpan'}).click();
  expect(await second.evaluate(()=>JSON.parse(localStorage.getItem('jsc-order-v1')))).toEqual({});
 });
-
