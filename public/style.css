@@ -61,10 +61,11 @@ label{display:block;font-weight:600;margin:1rem 0 .35rem}input,select,textarea{d
 .hero p strong,.hero p>span{display:block}.hero p strong{font-size:1.08em;line-height:1.1}.hero p>span{font-size:.82em;margin-top:.65em;line-height:1.22}
 .hero--shop h1>span,.hero--shop h1>em,.hero--cart h1>span,.hero--cart h1>em{display:inline-block;vertical-align:baseline}.hero--shop h1>em,.hero--cart h1>em{margin-left:.15em}
 @media(min-width:1001px){
- .hero--home h1{font-size:7.5vw}.hero--guide h1{font-size:7.5vw}.hero--field h1{font-size:7.3vw}
- .hero--shop h1,.hero--cart h1{font-size:8vw;white-space:nowrap}.hero--shop .hero-copy,.hero--cart .hero-copy{width:70%}
- .hero--brands h1{font-size:7.2vw}.hero--nike h1{font-size:9.5vw}.hero--adidas h1{font-size:8vw}
- .hero--review h1{font-size:7vw}.hero--size h1{font-size:7.8vw}.hero--about h1{font-size:6.8vw}.hero.hero--help h1{font-size:8.6vw;letter-spacing:0}
+ .hero h1{transform:scaleX(1.1);transform-origin:left center}
+ .hero.hero--home h1{font-size:8.5vw}.hero.hero--guide h1{font-size:8.5vw}.hero.hero--field h1{font-size:8.5vw}
+ .hero.hero--shop h1,.hero.hero--cart h1{font-size:9.7vw;white-space:nowrap}.hero--shop .hero-copy,.hero--cart .hero-copy{width:70%}
+ .hero.hero--brands h1{font-size:8.5vw}.hero.hero--nike h1{font-size:10.2vw}.hero.hero--adidas h1{font-size:9vw}
+ .hero.hero--review h1{font-size:8vw}.hero.hero--size h1{font-size:8.5vw}.hero.hero--about h1{font-size:7.2vw}.hero.hero--help h1{font-size:9.5vw;letter-spacing:0}
  .hero--about .hero-copy{width:61%}.hero--shop{min-height:19vw}.hero--brands{min-height:25vw}
 }
 @media(min-width:681px) and (max-width:1000px){.hero h1,.hero.shallow h1{font-size:7vw}.hero p{font-size:1.3rem}.hero--about h1{font-size:6vw}}
@@ -76,7 +77,7 @@ label{display:block;font-weight:600;margin:1rem 0 .35rem}input,select,textarea{d
 .surface-comparison img{width:100%;height:7rem;object-fit:cover;object-position:center}.surface-comparison h3{color:var(--lime);font-size:1.8rem;font-weight:800;font-style:italic;margin:0 0 .25rem}.surface-comparison p{font-size:1rem;line-height:1.25;margin:0}.comparison-section>small{display:block;margin-top:.5rem}
 .about-values{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid var(--blue)}
 .about-value{display:grid;grid-template-columns:42% 1fr;min-width:0;border:1px solid var(--line);background:#08111a}.about-value>.photo{height:100%;min-height:8rem;object-fit:cover}.about-value:nth-child(2)>.photo{object-fit:contain;background:radial-gradient(#1a3a52,#08111a)}.about-value>div{padding:.7rem}.about-value h2{font-size:1.6rem;margin-bottom:.3rem}.about-value p{font-size:1rem;line-height:1.25;margin-bottom:.5rem}.about-value .button{font-size:.85rem;min-height:2.1rem;padding:.4rem .7rem}
-.about-picks{padding-top:1rem;padding-bottom:1rem}.about-cta{min-height:13rem;gap:1rem}.about-cta>div:first-of-type{max-width:52%}.about-cta h2{font-size:3rem;max-width:13rem}.about-cta h2 em,.help-banner h2 em{display:block}.about-cta .actions{max-width:45%}
+.about-picks{padding-top:1rem;padding-bottom:1rem}.about-cta{min-height:13rem;gap:1rem}.about-cta>div:first-of-type{flex:0 0 38%;max-width:52%}.about-cta h2{font-size:3rem;max-width:none}.about-cta h2 em,.help-banner h2 em{display:block}.about-cta .actions{max-width:45%}
 .help-banner:not(.compact-help){min-height:16rem}.help-banner:not(.compact-help) h2{font-size:3.3rem;max-width:27rem}.help-banner:not(.compact-help) p{font-size:1.15rem}.help-banner:not(.compact-help) .button{border-color:var(--lime)}
 .product-layout details{border:1px solid var(--line);padding:.65rem .9rem;margin-bottom:.5rem;background:#040b12}.product-layout summary{list-style:none;display:flex;justify-content:space-between;align-items:center}.product-layout summary:after{content:'›';font-size:1.5em;line-height:1;color:var(--lime)}.product-layout details[open] summary:after{content:'⌄'}
 @media(max-width:1000px){.about-values{grid-template-columns:1fr}.surface-comparison article{grid-template-columns:1.5fr 1fr}}
