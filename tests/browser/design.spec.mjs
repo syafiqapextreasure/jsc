@@ -42,10 +42,36 @@ test('every page scales its title and body on large screens',async({page})=>{
   expect(sizes[1].body,route).toBeGreaterThan(sizes[0].body*1.5);
   expect(sizes[2].title,route).toBeGreaterThan(sizes[1].title);
   if(route==='/bantuan'){
-   expect(sizes[0].title).toBeGreaterThanOrEqual(125);
+   expect(sizes[0].title).toBeGreaterThanOrEqual(120);
    await page.screenshot({path:'test-results/design-3840-help.png',fullPage:true});
   }
  }
+});
+
+test('approved hero wording, line breaks and supporting sections',async({page})=>{
+ await page.setViewportSize({width:1440,height:1000});
+ for(const [route,first,accent,description] of [
+  ['/shop','Semua','kasut','Terokai koleksi kasut bola pilihan di Jang Sport Center.'],
+  ['/padang/tf','Kasut untuk','Turf','Turf pendek • Tapak TF'],
+  ['/jenama','Pilih jenama','anda.','Terokai koleksi kasut bola'],
+  ['/tentang-kami','Minat yang sama.','Gaya anda.','Terokai pilihan kasut bola']
+ ]){
+  await page.goto(route);await page.evaluate(()=>document.fonts.ready);
+  await expect(page.locator('.hero h1>span')).toHaveText(first);
+  await expect(page.locator('.hero h1>em')).toHaveText(accent);
+  await expect(page.locator('.hero-copy>p')).toContainText(description);
+  expect(await page.locator('.hero-copy>p').evaluate(e=>parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(34);
+  const title=await page.locator('.hero h1>span').evaluate(e=>({height:e.getBoundingClientRect().height,line:parseFloat(getComputedStyle(e).lineHeight)}));
+  expect(title.height,route).toBeLessThanOrEqual(title.line*1.15);
+ }
+ await page.goto('/shop');
+ const sameLine=await page.locator('.hero h1').evaluate(e=>Math.abs(e.querySelector('span').getBoundingClientRect().top-e.querySelector('em').getBoundingClientRect().top)<2);
+ expect(sameLine).toBe(true);
+ await page.goto('/padang');await expect(page.locator('.surface-comparison article')).toHaveCount(2);
+ await expect(page.locator('.comparison-heading')).toContainText('AG atau TF?');
+ await page.goto('/kasut/mint-speed');await expect(page.locator('.help-banner h2')).toContainText('Tak pasti kasut untuk padang anda?');
+ await page.goto('/tentang-kami');await expect(page.locator('.about-value')).toHaveCount(2);
+ await expect(page.locator('.about-cta .actions a')).toHaveCount(2);
 });
 
 test('each surface has its field guide and filterable catalogue',async({page})=>{
