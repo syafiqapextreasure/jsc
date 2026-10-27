@@ -13,3 +13,22 @@
 .hero-shade{background:linear-gradient(90deg,#020910 0%,#020910 54%,#020910f5 56%,#02091000 67%)}
 .gallery-main>img{aspect-ratio:3/2;object-fit:contain}
 @media(max-width:680px){.home-hero .hero-copy{padding-bottom:15.5rem}.home-hero .hero-art{height:17rem;inset:auto 0 0}.home-hero .hero-art img{content:url('/assets/detail.webp');width:176.55%;height:286.57%;left:-5.34%;top:-30.97%}.home-hero .hero-shade{background:linear-gradient(180deg,#020910 0%,#020910 43%,#020910ee 47%,#02091000 61%)}.compact-hero .hero-shade{background:linear-gradient(90deg,#020910fa,#02091099)}}
+@media(max-width:360px){.header-inner .logo{width:170px}.header-inner{gap:.4rem}.cart-link{margin-left:0}.hero .actions{gap:.4rem}.hero .button{font-size:.72rem;padding:.6rem .65rem}}
+/* Use the approved hero artwork at its original composition on larger screens. */
+@media(min-width:681px){
+.home-hero{aspect-ratio:1024/386}
+.home-hero .hero-art{inset:0;height:100%;transform:translate3d(0,min(var(--parallax,0px),12px),0)}
+.home-hero .hero-shade{display:none}
+.home-hero .hero-copy{height:100%;padding:0;max-width:none;transform:translate3d(0,min(var(--parallax,0px),12px),0)}
+.home-hero h1,.home-hero p{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.home-hero .actions{position:absolute;left:4.88%;top:64%;width:50%;height:12%;gap:3.1%}
+.home-hero .actions .button{height:100%;padding:0 .6rem;min-height:0;font-size:clamp(.75rem,1.35vw,1.4rem);white-space:nowrap}
+.home-hero .actions .button:first-child{width:43.6%}
+.home-hero .actions .button:last-child{width:28.7%;border-color:var(--blue)}
+}
+.compact-hero .hero-art{inset:auto 0;top:50%;height:auto;aspect-ratio:1024/336;transform:translateY(calc(-50% + var(--parallax,0px)));opacity:1}
+.compact-hero .hero-art img{width:var(--iw);height:var(--ih);left:var(--ix);top:var(--iy)}
+.compact-hero .hero-shade{background:linear-gradient(90deg,#020910 0%,#020910 62%,#020910f9 65%,#02091000 78%)}
+.compact-hero h1 em:before{content:' '}
+@media(max-width:680px){.compact-hero .hero-art{inset:0;height:100%;aspect-ratio:auto;transform:none}.compact-hero .hero-shade{background:linear-gradient(90deg,#020910 0%,#020910 68%,#02091066)}.compact-hero h1 em:before{content:none}.hero p br:after{content:' '}}
+

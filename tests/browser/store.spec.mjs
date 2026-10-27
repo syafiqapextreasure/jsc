@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-for(const width of [390,768,1440,2560]) {
+for(const width of [320,390,768,1440,2560]) {
  test(`responsive pages at ${width}px`,async({page})=>{
   await page.setViewportSize({width,height:1000});
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -22,7 +22,7 @@ test('cart to WhatsApp preserves choices without sending a message',async({page}
  await page.getByRole('link',{name:'Lihat cart →',exact:true}).click();
  await expect(page.locator('[data-cart-count]')).toHaveText('2');
  await page.reload();await expect(page.locator('[data-cart-count]')).toHaveText('2');
- await page.getByLabel('Kuantiti',{exact:true}).fill('3');await page.getByLabel('Kuantiti',{exact:true}).blur();
+ await page.getByLabel('Kuantiti',{exact:true}).fill('3');
  await page.getByRole('link',{name:'Semak pesanan'}).click();
  await page.getByLabel('Nama (pilihan)').fill('Ali');
  await page.getByLabel('Jenis padang anda').selectOption({label:'Turf Pendek (TF)'});
@@ -46,3 +46,18 @@ test('filters, surface selection, mobile menu and reduced motion',async({page})=
  await page.goto('/shop');await page.getByLabel('Jenama',{exact:true}).selectOption('adidas');await page.getByRole('button',{name:'Tapis kasut'}).click();await expect(page.locator('.product-card')).toHaveCount(5);
  await page.getByLabel('Carian').fill('not-a-shoe');await page.getByRole('button',{name:'Tapis kasut'}).click();await expect(page.locator('.product-card')).toHaveCount(0);
 });
+test('WhatsApp follows cross-tab edits and empty cart can clear personal details',async({page,context})=>{
+ await page.goto('/kasut/red-gold');
+ await page.getByLabel('Saiz yang dicari',{exact:true}).fill('UK 8');
+ await page.getByRole('button',{name:'Tambah ke cart'}).click();
+ await page.goto('/pesanan');await page.getByLabel('Nama (pilihan)').fill('Ali');
+ await page.getByRole('button',{name:'Teruskan ke WhatsApp'}).click();
+ const second=await context.newPage();await second.goto('/cart');
+ await second.getByLabel('Kuantiti',{exact:true}).fill('4');await second.getByLabel('Kuantiti',{exact:true}).press('Tab');
+ await expect(page.locator('#message-preview')).toContainText('Kuantiti: 4');
+ await second.getByRole('button',{name:'Buang Red Gold'}).click();
+ await expect(page.getByRole('heading',{name:'Cart anda masih kosong'})).toBeVisible();
+ await second.getByRole('button',{name:'Kosongkan maklumat tersimpan'}).click();
+ expect(await second.evaluate(()=>JSON.parse(localStorage.getItem('jsc-order-v1')))).toEqual({});
+});
+
