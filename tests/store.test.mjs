@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import worker, {publicPaths} from '../src/worker.mjs';
 import {products, surfaces, faqs, filterProducts} from '../src/catalog.mjs';
 import {sanitizeCart, orderMessage} from '../public/cart-core.mjs';
+import {imageData} from '../src/image-data.mjs';
 
 const origin='https://shop.example';
 const get=(path,env={})=>worker.fetch(new Request(origin+path),env);
@@ -145,6 +146,21 @@ test('static assets use the binding and receive security headers',async()=>{
   assert.equal(asset.headers.get('content-type'),'text/css');
   assert.equal(asset.headers.get('x-content-type-options'),'nosniff');
   assert.equal(asset.headers.get('x-frame-options'),'DENY');
+});
+
+test('responsive images have valid size candidates, dimensions and cache headers',async()=>{
+  assert.equal(Object.keys(imageData).length,39);
+  for(const [name,image] of Object.entries(imageData)){
+    assert.ok(image.width>0&&image.height>0,name);
+    assert.ok(image.variants.includes(480),name);
+    assert.ok(image.variants.every(width=>width<image.width),name);
+  }
+  const html=await(await get('/')).text();
+  assert.match(html,/hero-home-480\.webp 480w/);
+  assert.match(html,/hero-home-1440\.webp 1440w/);
+  assert.match(html,/fetchpriority="high"/);
+  const asset=await get('/assets/responsive-v1/hero-home-480.webp',{ASSETS:{fetch:async()=>new Response('image')}});
+  assert.equal(asset.headers.get('cache-control'),'public, max-age=31536000, immutable');
 });
 
 test('cart sanitization discards unknown products, blank sizes and malformed storage',()=>{

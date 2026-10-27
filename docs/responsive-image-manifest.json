@@ -1,0 +1,735 @@
+{
+  "brand-adidas": {
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1892796,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 475200,
+        "sha256": "d960dd11c72e48a8ac62fe8d09b65470d94f01a04bbc059378357b4dd01bd473"
+      },
+      {
+        "width": 960,
+        "bytes": 1716954,
+        "sha256": "4eb840740c48f9286c7e481e6cfed3210c490a0aec2a8bf0550362cc8c9fac97"
+      }
+    ]
+  },
+  "brand-nike": {
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1933008,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 499514,
+        "sha256": "1635842b8b52056cca613eba5c9bf1e69b8e779c9586a3cc6fd3b9820d5dbe9a"
+      },
+      {
+        "width": 960,
+        "bytes": 1759954,
+        "sha256": "f817368b26de99758bd58d139fdefa618b5814c1551189424e19bb2dbaf48d0c"
+      }
+    ]
+  },
+  "detail-mint": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 1828300,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 303228,
+        "sha256": "77b06dd9043a07b906aa1126384d26cd331ad74bb8c4d5241b436d252b77613e"
+      },
+      {
+        "width": 960,
+        "bytes": 1130098,
+        "sha256": "accdf00adb5ffbf611ef78976a21e4297e47cf70e9a29dbb4d123d44e0e4bb90"
+      }
+    ]
+  },
+  "gift-strip": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1365660,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 114452,
+        "sha256": "49275c60100b2f305737082fa1c97bd8e5b388349fc7bd639fe0c11042fa74ba"
+      },
+      {
+        "width": 960,
+        "bytes": 390168,
+        "sha256": "d632f6de342843681a06ca214b9f536bb9ffe69ed6d9f4d4ea2a95b059eaca18"
+      },
+      {
+        "width": 1440,
+        "bytes": 809064,
+        "sha256": "e4db1bd4bad061f3c63f5f1daf055e5cdaec51ba8279e11c80e718669e6342dc"
+      }
+    ]
+  },
+  "hero-about": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1708326,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 146688,
+        "sha256": "afb8ed6627643bcf6d9a8886e635554e991602520542e56ee17b2e80b2e692e4"
+      },
+      {
+        "width": 960,
+        "bytes": 490130,
+        "sha256": "e1f33bdcbc600391951c3ec0b5d42cd2ed890b6ca12fe6ed9ba6281bf1ada077"
+      },
+      {
+        "width": 1440,
+        "bytes": 1000088,
+        "sha256": "44a60ea09cead2aa43a41c00bd934c8b2f931cf11b7c3b5bd6c8b248459b51fa"
+      }
+    ]
+  },
+  "hero-adidas": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1810620,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 149202,
+        "sha256": "ce51794e8f1a14d6dd67d132ad64b20fa205a0537022f9d3ea84dec66dcbd129"
+      },
+      {
+        "width": 960,
+        "bytes": 501830,
+        "sha256": "a8e017590587edb1882674d57964810ae743038158994b653b79df2a7361481a"
+      },
+      {
+        "width": 1440,
+        "bytes": 1044470,
+        "sha256": "18aab654e0fdf0c5aad750a5312bdf62dbcfa4a1c8a76dbb4d0bef75b3b8fc3c"
+      }
+    ]
+  },
+  "hero-ball": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1701318,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 149268,
+        "sha256": "835af1d9a1f900c841f891ae18df92bdd87db2502fb4f7ec0341adf9e90dba9c"
+      },
+      {
+        "width": 960,
+        "bytes": 492132,
+        "sha256": "5446dee4bcf8d0a071f56d48aeac2fdd21ec3ed34d304605bcbf6b3353e0aca6"
+      },
+      {
+        "width": 1440,
+        "bytes": 999826,
+        "sha256": "48646596648dbc34abab4f5418b3ff7ee526a17c29a0348f0135b5396ef4104b"
+      }
+    ]
+  },
+  "hero-help": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1693474,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 146150,
+        "sha256": "cd12eab98bba843308b1836c533d6ec62bc7bd78e127a731cf5f12a0fffe21eb"
+      },
+      {
+        "width": 960,
+        "bytes": 485700,
+        "sha256": "d3f8f90c3cd2a8d909efd3f8e412fa1e06ee907eaafcf7917d187b52c6ab127c"
+      },
+      {
+        "width": 1440,
+        "bytes": 993248,
+        "sha256": "81cee3651c5eb895245261b4f715549b36bf1a69032acd1ac0f021b583c8c50c"
+      }
+    ]
+  },
+  "hero-home": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1656348,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 143486,
+        "sha256": "9687330c96a445d044f71bc9da05c4b90b1a1458c16260f6210e03468bcfca2a"
+      },
+      {
+        "width": 960,
+        "bytes": 475158,
+        "sha256": "514c43148b2a23aac86be32ad78eb34f8d69e09de67db7d96600f477001496b6"
+      },
+      {
+        "width": 1440,
+        "bytes": 974292,
+        "sha256": "83136ac19f44277594180d85ee39b549fcb430d7f090c904239bf046731715d2"
+      }
+    ]
+  },
+  "hero-nike": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1753208,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 150578,
+        "sha256": "e9a9fb2bfcc69a3cbd4a81a56bf3268e3ae244bbe62981ad49feac29abf4e358"
+      },
+      {
+        "width": 960,
+        "bytes": 505368,
+        "sha256": "fa3fc5c2addd907c509db3b8354a10de0ffd12455b650d65a2fab5255fec46be"
+      },
+      {
+        "width": 1440,
+        "bytes": 1030322,
+        "sha256": "8915ed87f577e4d7a172bc968f390ea85fac0b27373547bf752606a5d67c39b5"
+      }
+    ]
+  },
+  "hero-short-ball": {
+    "width": 2172,
+    "height": 724,
+    "originalBytes": 1731682,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 124672,
+        "sha256": "ebe2535c88be9db0b377887610ae22d49462187bde0b012de675b1efc7a7b9ee"
+      },
+      {
+        "width": 960,
+        "bytes": 422376,
+        "sha256": "c5be3b05e7db66987aa596529d11e36e8f71d813788626085d5308255373297d"
+      },
+      {
+        "width": 1440,
+        "bytes": 866652,
+        "sha256": "e069028731196fc6f62112986a4d9c1324b001e7ca90f68f232b4082691a9b79"
+      }
+    ]
+  },
+  "hero-short-mint": {
+    "width": 2172,
+    "height": 724,
+    "originalBytes": 1621086,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 124032,
+        "sha256": "adfcfde3d745ff1be6ebaa1b8b5038c6d2ff06f96d69087b4208f1532d04808f"
+      },
+      {
+        "width": 960,
+        "bytes": 409120,
+        "sha256": "777e866530a436ab50f835438594473b07cac93a4151688c6eaa5350f68a2464"
+      },
+      {
+        "width": 1440,
+        "bytes": 828438,
+        "sha256": "c3e460227f669fa2653d0d7ed8892ba3d426d2926abe95e872009ab1d14c6b76"
+      }
+    ]
+  },
+  "hero-size": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1656504,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 136654,
+        "sha256": "963186d16c1fcbdbec7a1d3b3f79025f7c99c4ce11b59b8aaf67e4c685f7c6b4"
+      },
+      {
+        "width": 960,
+        "bytes": 458586,
+        "sha256": "333cbb19b0d8e0c70423ca9eb11203e7ef3d8a16387434f8899d216b2b5cd0c4"
+      },
+      {
+        "width": 1440,
+        "bytes": 957034,
+        "sha256": "0bf83a8f7f71165cc0dd3f76c407ca2a34598908c886b66cda2744621697fd28"
+      }
+    ]
+  },
+  "hero-turf": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1632056,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 145334,
+        "sha256": "ba0519a98fba3ff32b7da9da90bfbd3f4021930d928d52c123afad71f48e8f60"
+      },
+      {
+        "width": 960,
+        "bytes": 476510,
+        "sha256": "8acc804800544df6343cd056afa71a66b947af936bff8ce98085c8e043b82cd3"
+      },
+      {
+        "width": 1440,
+        "bytes": 964206,
+        "sha256": "8fc617d0115e4d85257819363433de312c66adcd4b1ca5fdb54ce8a424de4a55"
+      }
+    ]
+  },
+  "home-gift-strip": {
+    "width": 2172,
+    "height": 724,
+    "originalBytes": 941758,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 58360,
+        "sha256": "c82acbab34696a51d5b8dcf758e9afeca87dfff9a4b33f93b68e84405839df44"
+      },
+      {
+        "width": 960,
+        "bytes": 218352,
+        "sha256": "f877cdd65a7c1f88f8f7be1082d64f92be44e397aea644b09000b6adb38c083e"
+      },
+      {
+        "width": 1440,
+        "bytes": 475316,
+        "sha256": "621196ba23689517c0259d34b6cff4bc7060795554ca4dd1f69026f71b330f7b"
+      }
+    ]
+  },
+  "measurement": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1625596,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 155828,
+        "sha256": "a012903617085e13431b6eec4f9ceb0bf467b94e4f191ed7b31e043cca1ab276"
+      },
+      {
+        "width": 960,
+        "bytes": 657038,
+        "sha256": "058fd438659272d2de1c490e7f6e52872918232b8be6fc3b6fcf51802b1148b1"
+      }
+    ]
+  },
+  "nike-magenta-kobe": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1997694,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 243704,
+        "sha256": "bab422e71c783758396e89bba9e938a6641d33d55a776bf3d7ad3b6923f0e391"
+      },
+      {
+        "width": 960,
+        "bytes": 868296,
+        "sha256": "bcfc79373a1d4656d4344114af96330e337f7a40f4de7c25b907e23f5ec91595"
+      }
+    ]
+  },
+  "nike-mint-speed": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1944154,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 234626,
+        "sha256": "9cf80b040a087c92584eecfcd051eaba9ce160ee995bdc2db936b3638bc0c5df"
+      },
+      {
+        "width": 960,
+        "bytes": 837500,
+        "sha256": "dcb4c9e10bbb3534e6350df599cd3dfb2e2c738646432f44a2c78316a52f7c45"
+      }
+    ]
+  },
+  "nike-pink-speed": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1833836,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 222142,
+        "sha256": "e8f6ffcdfb25042128d45ffc5d4070f4077b97969994f9cca7be6fa77152af85"
+      },
+      {
+        "width": 960,
+        "bytes": 792526,
+        "sha256": "c95595c777927ca35fe5b6b7eef4bd5582492e71f4c99390580ae74c0405628a"
+      }
+    ]
+  },
+  "nike-red-gold": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2032672,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 239538,
+        "sha256": "8b6c05a6f30757b78c49ed9887d309eaefa57dc81851b6b24d4b6701c7233b80"
+      },
+      {
+        "width": 960,
+        "bytes": 865342,
+        "sha256": "ce5e4bebc25adf7752124a95cca096b52ed557fa104a634375c65ab4dffb20b4"
+      }
+    ]
+  },
+  "outsole-ag": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1236986,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 140028,
+        "sha256": "dc74c7a53d44578e66e169a409871c2be53b9e87569e66c2b49ce49353ad92d3"
+      },
+      {
+        "width": 960,
+        "bytes": 537952,
+        "sha256": "c243a71734f08643434f6e5b0138a976d4017e0f4a036530a33d0d10b760febe"
+      }
+    ]
+  },
+  "product-camo-gold": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1748822,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 193946,
+        "sha256": "99e6b478ae39b0bca8dffe4fa0f73044ce92929307dfa4a12c7bbb0b4164e8a8"
+      },
+      {
+        "width": 960,
+        "bytes": 730242,
+        "sha256": "c6675e24e5eb3e9e274c201963b3b0bda049ba76d27cd6fa293e722e5cb74905"
+      }
+    ]
+  },
+  "product-leopard-control": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1927152,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 203138,
+        "sha256": "e7858232131e1baa31b17a02bdcac984092b02439aa757a7cde2d017a8fca171"
+      },
+      {
+        "width": 960,
+        "bytes": 787880,
+        "sha256": "d7de1bd2f862926a77fc813cb2797511a97f4c55ad7f3594ed4683b5c5afb5e2"
+      }
+    ]
+  },
+  "product-magenta-kobe": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1884358,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 212824,
+        "sha256": "542b49c955b42e061d1b9e16695ce6f07d219b6bf2bfaae051b53f8ce3e65a5b"
+      },
+      {
+        "width": 960,
+        "bytes": 805326,
+        "sha256": "59353404b1678d50b3690f6497fbf72def6aadd7067c9dbd09c130e6fe088d43"
+      }
+    ]
+  },
+  "product-mint-speed": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1837420,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 203716,
+        "sha256": "81bb941f8c696713e40efa8dcd970591aa6feedd8097eeaa13e8b261baa2ff99"
+      },
+      {
+        "width": 960,
+        "bytes": 767460,
+        "sha256": "7d5025fb3ddae090c5a36a682bd9348c10808ea82e8a0802db48028c6cca6a3f"
+      }
+    ]
+  },
+  "product-pink-laced": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1769264,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 189062,
+        "sha256": "f811504ad2963df93bfa204411f493b2b0ce2cceaa16c37d1caba14233d8dfab"
+      },
+      {
+        "width": 960,
+        "bytes": 728874,
+        "sha256": "470b2d456362797e15d0105c7c6a7aa5d2e51a09420c1a802d0d307d16b746ff"
+      }
+    ]
+  },
+  "product-pink-laceless": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1687308,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 185912,
+        "sha256": "0dd32947fbe92bd69b40e366e929371f607e9850314f374408efdf2488695622"
+      },
+      {
+        "width": 960,
+        "bytes": 705822,
+        "sha256": "b173cfbe2733fad99db8a54cd80db8108061a5daabeccb2110fea3f4014348eb"
+      }
+    ]
+  },
+  "product-pink-speed": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1811160,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 188416,
+        "sha256": "72fccf67ace658b97ef2920f227220fcb49f00bb460947af9ba7e30b54498f78"
+      },
+      {
+        "width": 960,
+        "bytes": 744532,
+        "sha256": "2e91dc464bcda1dfe9091c8aac43c76f906eaa871daa9b6cd4865e75245e61fd"
+      }
+    ]
+  },
+  "product-red-gold": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1803306,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 198168,
+        "sha256": "47d4d1c3d45f5816e9fd09212a444a7016735d71f945e8dda332e163378963df"
+      },
+      {
+        "width": 960,
+        "bytes": 758228,
+        "sha256": "4c5124a0f884615bc2cf4ff9fbfe0c95b544919ceaf2676f3ac4610bac945729"
+      }
+    ]
+  },
+  "product-red-white-control": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1722038,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 184790,
+        "sha256": "5054866e0f27233f02f56afab1acb10b548f03f5583bdc5314bee44ed4199fdb"
+      },
+      {
+        "width": 960,
+        "bytes": 716972,
+        "sha256": "7874ddbb8192935a3232da073b4c4b4e57d8bc2a5a2d660a1065155373ec3299"
+      }
+    ]
+  },
+  "socks": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 997962,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 57182,
+        "sha256": "eef14bde24bcdece03f87e27aae291e7701c379be00fc65476817bc8ac4bd020"
+      },
+      {
+        "width": 960,
+        "bytes": 242992,
+        "sha256": "410b94c6777933ae65537a53ef6c164e35592682c8433bbcad7b3815aac217ad"
+      }
+    ]
+  },
+  "stadium": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1552132,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 136870,
+        "sha256": "03c9b51a299c720b3abcd7a90433822a66a69a969d636daeae783218d7cc6256"
+      },
+      {
+        "width": 960,
+        "bytes": 454118,
+        "sha256": "a48c87497101746259392f084ffa544c343fc1693f2344eed2539809dbf237b4"
+      },
+      {
+        "width": 1440,
+        "bytes": 920032,
+        "sha256": "98a60d1f8f4740382eb035ab4fbc30c1901112f5ba1b8156c7bddf023752ed4f"
+      }
+    ]
+  },
+  "surface-ag": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1386368,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 194476,
+        "sha256": "3cbe18d5e326cfbaede73bf287b05b51102a9acf69ddc12e77c3c966bfc18c92"
+      },
+      {
+        "width": 960,
+        "bytes": 631836,
+        "sha256": "7072d99064f0c9b58940ea461c8268ae934d2cd9e9de5e63f4f881fa6f563015"
+      }
+    ]
+  },
+  "surface-fg": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1707218,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 242308,
+        "sha256": "312fae7164ecddcc62df66503a6027a29ec17964548379dc2fd12202d7d39cb0"
+      },
+      {
+        "width": 960,
+        "bytes": 787688,
+        "sha256": "711241a7fd4c4abd5f2d6233a80c93674297273ce25c0b2a5907e69533f9e4b1"
+      }
+    ]
+  },
+  "surface-ic": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1480526,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 183516,
+        "sha256": "fc807c5af55e572fec1c0f35872d96438bb33d4542ab4ffcc3a8bbefb0fa28c4"
+      },
+      {
+        "width": 960,
+        "bytes": 639510,
+        "sha256": "f840c829b1bcb8c690c1e465bc922efd31fc5d669d48bd0326dfc12997c296d0"
+      }
+    ]
+  },
+  "surface-tf": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1732788,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 246008,
+        "sha256": "09503a381c362b9957919aff490cd94edcec984c478f840885a3cd56c231eca8"
+      },
+      {
+        "width": 960,
+        "bytes": 800440,
+        "sha256": "9d13f16595bf03afa798069a41172ec9edb85f4f7237724e485d4b9efabce948"
+      }
+    ]
+  },
+  "tactics-strip": {
+    "width": 1983,
+    "height": 793,
+    "originalBytes": 1408918,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 112678,
+        "sha256": "00b00a891fa6ac6e42dee39ee84880361738e06a178a040d3f7a44361a8dca6b"
+      },
+      {
+        "width": 960,
+        "bytes": 392456,
+        "sha256": "44a9a7cb22a8d8291a60d6f64bd0d60a8dc7427087ec3c31be6a2c24bd5de8b4"
+      },
+      {
+        "width": 1440,
+        "bytes": 823936,
+        "sha256": "0d681b159cc11dddde6de99dc2fcf95fd80db79f768122fc78d4dce8f0dbe812"
+      }
+    ]
+  },
+  "turf-outsole": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 1592680,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 160396,
+        "sha256": "367994c6ceac8857ad07e636aae9bc2dc99f297be936a1a398a3a3c0ab6727c8"
+      },
+      {
+        "width": 960,
+        "bytes": 577764,
+        "sha256": "57426e5f73505c2a6ecaf236e1c004c70958eb26edfd1eca89d37bb3ea462bd3"
+      }
+    ]
+  },
+  "whatsapp-stage": {
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1348636,
+    "variants": [
+      {
+        "width": 480,
+        "bytes": 384048,
+        "sha256": "79809cdc112f4152649bf3aa8acbfb8bc4177b9e81fbc603817431a93af13a9c"
+      },
+      {
+        "width": 960,
+        "bytes": 1269358,
+        "sha256": "439fd55932149bc3c6b6dfabb687109d32850666cbf410490e80a9254c3fd6f7"
+      }
+    ]
+  }
+}

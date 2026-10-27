@@ -11,7 +11,7 @@ export default {async fetch(request,env={}) {
  if(path.startsWith('/assets/')||['/app.mjs','/cart-core.mjs','/style.css','/favicon.svg'].includes(path)) {
   const asset=env.ASSETS?await env.ASSETS.fetch(request):new Response('Not found',{status:404});
   const response=new Response(request.method==='HEAD'?null:asset.body,asset);
-  if(path.startsWith('/assets/v4/')&&response.status===200)response.headers.set('Cache-Control','public, max-age=31536000, immutable');
+  if((path.startsWith('/assets/v4/')||path.startsWith('/assets/responsive-v1/'))&&response.status===200)response.headers.set('Cache-Control','public, max-age=31536000, immutable');
   Object.entries(security).forEach(([k,val])=>response.headers.set(k,val));return response;
  }
  let origin=url.origin;
