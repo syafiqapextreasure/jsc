@@ -9,16 +9,14 @@ const get=(path,env={})=>worker.fetch(new Request(origin+path),env);
 const schemas=html=>JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 
 test('surface filtering combines with brand, style and search once stock is classified',async()=>{
- const shoe=products.find(p=>p.slug==='mint-speed');
- shoe.surfaces.push('ag');
- try {
+
   assert.deepEqual(filterProducts(new URLSearchParams('padang=ag&jenama=nike&q=mint')).map(p=>p.slug),['mint-speed']);
-  assert.deepEqual(filterProducts(new URLSearchParams('padang=ag&jenama=adidas')),[]);
+  assert.equal(filterProducts(new URLSearchParams('padang=ag&jenama=adidas')).length,5);
   const html=await(await get('/shop?padang=ag&jenama=nike')).text();
-  assert.ok(html.includes('1 KASUT DITEMUI'));
+  assert.ok(html.includes('4 KASUT DITEMUI'));
   assert.ok(html.includes('name="padang" value="ag"'));
   assert.match(html,/data-surface="tf" href="\/shop\?jenama=nike&amp;padang=tf"/);
- } finally {shoe.surfaces.length=0}
+
 });
 
 test('all public pages render a real document, one main heading and canonical URL', async()=>{
@@ -133,7 +131,7 @@ test('search, brand, style and sort combine without mutating the catalogue',()=>
 
 test('unverified shoes never appear as confirmed surface matches',async()=>{
   assert.equal(products.length,9);
-  for(const s of surfaces.filter(s=>s.id!=='fg')){
+  for(const s of surfaces.filter(s=>['tf','ic'].includes(s.id))){
     assert.deepEqual(filterProducts(new URLSearchParams('padang='+s.id)),[]);
     const html=await (await get('/padang/'+s.id)).text();
     assert.ok(html.includes('Kesesuaian tapak untuk koleksi ini sedang disemak'));
@@ -178,11 +176,12 @@ test('WhatsApp message contains each requested choice, customer details and enqu
   assert.equal(orderMessage([],products),'');
 });
 
- test('FG suggestions appear with a visible qualification, without claiming verified stock',async()=>{
+ test('seller-approved FG and AG categories display the stock',async()=>{
  assert.equal(filterProducts(new URLSearchParams('padang=fg')).length,9);
  assert.equal(filterProducts(new URLSearchParams('padang=fg&jenama=adidas&gaya=Tanpa+tali')).length,3);
- assert.ok(products.every(p=>p.surfaces.length===0));
- for(const route of ['/shop?padang=fg','/padang/fg','/kasut/mint-speed']){
-  const html=await(await get(route)).text();assert.ok(html.includes('Cadangan awal: Rumput Asli (FG).'));assert.ok(html.includes('Jenis tapak sebenar perlu disahkan'));
+ assert.equal(filterProducts(new URLSearchParams('padang=ag')).length,9);
+ assert.ok(products.every(p=>p.surfaceSource==='seller'));
+ for(const route of ['/shop?padang=fg','/shop?padang=ag','/padang/fg','/padang/ag','/kasut/mint-speed']){
+  const html=await(await get(route)).text();assert.ok(html.includes('Rumput Asli (FG) &amp; Rumput Tiruan (AG).'));assert.ok(html.includes('Kategori padang berdasarkan maklumat penjual'));
  }
 });

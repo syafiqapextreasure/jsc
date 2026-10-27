@@ -11,7 +11,10 @@ test('catalog filters update in place and combine with surface tabs',async({page
  await page.locator('.surface-tabs [data-surface="fg"]').click();
  await expect(page.locator('.surface-tabs [data-surface="fg"]')).toHaveAttribute('aria-current','page');
  await expect(page.locator('.product-card')).toHaveCount(3);
- await expect(page.locator('.surface-advice')).toContainText('Cadangan awal');
+ await expect(page.locator('.surface-advice')).toContainText('maklumat penjual');
+ await page.locator('.surface-tabs [data-surface="ag"]').click();
+ await expect(page.locator('.surface-tabs [data-surface="ag"]')).toHaveAttribute('aria-current','page');
+ await expect(page.locator('.product-card')).toHaveCount(3);
  await page.locator('#sort').selectOption('za');
  await expect(page.locator('.product-card h3').first()).toHaveText('Red White Control');
  await page.locator('.surface-tabs [data-surface="tf"]').click();
