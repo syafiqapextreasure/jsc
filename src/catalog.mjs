@@ -18,10 +18,10 @@ export const surfaces = [
 ];
 export function filterProducts(params, brand) {
   const q=(params.get('q')||'').trim().toLowerCase().slice(0,100);
-  const b=brand||params.get('jenama');
-  const style=params.get('gaya');
+  const brands=brand?[brand.toLowerCase()]:params.getAll('jenama').filter(Boolean).map(b=>b.toLowerCase());
+  const styles=params.getAll('gaya').filter(Boolean);
   const surface=params.get('padang');
-  const found=products.filter(p=>(!q||`${p.name} ${p.brand} ${p.colour}`.toLowerCase().includes(q))&&(!b||p.brand.toLowerCase()===b.toLowerCase())&&(!style||p.style===style)&&(!surface||p.surfaces.includes(surface)));
+  const found=products.filter(p=>(!q||`${p.name} ${p.brand} ${p.colour}`.toLowerCase().includes(q))&&(!brands.length||brands.includes(p.brand.toLowerCase()))&&(!styles.length||styles.includes(p.style))&&(!surface||p.surfaces.includes(surface)));
   if(params.get('sort')==='az') found.sort((a,b)=>a.name.localeCompare(b.name));
   if(params.get('sort')==='za') found.sort((a,b)=>b.name.localeCompare(a.name));
   return found;
