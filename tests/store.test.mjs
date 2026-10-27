@@ -10,14 +10,14 @@ const schemas=html=>JSON.parse(html.match(/<script type="application\/ld\+json">
 
 test('surface filtering combines with brand, style and search once stock is classified',async()=>{
  const shoe=products.find(p=>p.slug==='mint-speed');
- shoe.surfaces.push('fg');
+ shoe.surfaces.push('ag');
  try {
-  assert.deepEqual(filterProducts(new URLSearchParams('padang=fg&jenama=nike&q=mint')).map(p=>p.slug),['mint-speed']);
-  assert.deepEqual(filterProducts(new URLSearchParams('padang=fg&jenama=adidas')),[]);
-  const html=await(await get('/shop?padang=fg&jenama=nike')).text();
+  assert.deepEqual(filterProducts(new URLSearchParams('padang=ag&jenama=nike&q=mint')).map(p=>p.slug),['mint-speed']);
+  assert.deepEqual(filterProducts(new URLSearchParams('padang=ag&jenama=adidas')),[]);
+  const html=await(await get('/shop?padang=ag&jenama=nike')).text();
   assert.ok(html.includes('1 KASUT DITEMUI'));
-  assert.ok(html.includes('name="padang" value="fg"'));
-  assert.match(html,/data-surface="ag" href="\/shop\?jenama=nike&amp;padang=ag"/);
+  assert.ok(html.includes('name="padang" value="ag"'));
+  assert.match(html,/data-surface="tf" href="\/shop\?jenama=nike&amp;padang=tf"/);
  } finally {shoe.surfaces.length=0}
 });
 
@@ -133,7 +133,7 @@ test('search, brand, style and sort combine without mutating the catalogue',()=>
 
 test('unverified shoes never appear as confirmed surface matches',async()=>{
   assert.equal(products.length,9);
-  for(const s of surfaces){
+  for(const s of surfaces.filter(s=>s.id!=='fg')){
     assert.deepEqual(filterProducts(new URLSearchParams('padang='+s.id)),[]);
     const html=await (await get('/padang/'+s.id)).text();
     assert.ok(html.includes('Kesesuaian tapak untuk koleksi ini sedang disemak'));
@@ -176,4 +176,13 @@ test('WhatsApp message contains each requested choice, customer details and enqu
   const link=new URL('https://wa.me/60199628865?text='+encodeURIComponent(message));
   assert.equal(link.searchParams.get('text'),message);
   assert.equal(orderMessage([],products),'');
+});
+
+ test('FG suggestions appear with a visible qualification, without claiming verified stock',async()=>{
+ assert.equal(filterProducts(new URLSearchParams('padang=fg')).length,9);
+ assert.equal(filterProducts(new URLSearchParams('padang=fg&jenama=adidas&gaya=Tanpa+tali')).length,3);
+ assert.ok(products.every(p=>p.surfaces.length===0));
+ for(const route of ['/shop?padang=fg','/padang/fg','/kasut/mint-speed']){
+  const html=await(await get(route)).text();assert.ok(html.includes('Cadangan awal: Rumput Asli (FG).'));assert.ok(html.includes('Jenis tapak sebenar perlu disahkan'));
+ }
 });

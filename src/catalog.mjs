@@ -9,7 +9,7 @@ export const products = [
   ['camo-gold', 'Camo Gold', 'adidas', 'Camo / Gold', 'Bertali', '07-camo-gold'],
   ['pink-laceless', 'Pink Laceless', 'adidas', 'Pink / Black', 'Tanpa tali', '08-pink-laceless'],
   ['red-white-control', 'Red White Control', 'adidas', 'Red / White', 'Tanpa tali', '09-red-white-control'],
-].map(([slug,name,brand,colour,style,image],index) => ({slug,name,brand,colour,style,image,index,surfaces:[]}));
+].map(([slug,name,brand,colour,style,image],index) => ({slug,name,brand,colour,style,image,index,surfaces:[],suggestedSurfaces:['fg']}));
 export const surfaces = [
   {id:'fg', name:'Rumput Asli', label:'Firm Ground', short:'Rumput semula jadi yang padat.', detail:'FG lazimnya digunakan pada rumput semula jadi yang padat. Semak keadaan padang dan spesifikasi tapak kasut sebelum memilih.'},
   {id:'ag', name:'Rumput Tiruan', label:'Artificial Grass', short:'Rumput sintetik panjang.', detail:'AG direka untuk permukaan rumput sintetik yang lebih panjang. Pilihan tapak bergantung pada spesifikasi kasut dan peraturan padang.'},
@@ -21,7 +21,7 @@ export function filterProducts(params, brand) {
   const brands=brand?[brand.toLowerCase()]:params.getAll('jenama').filter(Boolean).map(b=>b.toLowerCase());
   const styles=params.getAll('gaya').filter(Boolean);
   const surface=params.get('padang');
-  const found=products.filter(p=>(!q||`${p.name} ${p.brand} ${p.colour}`.toLowerCase().includes(q))&&(!brands.length||brands.includes(p.brand.toLowerCase()))&&(!styles.length||styles.includes(p.style))&&(!surface||p.surfaces.includes(surface)));
+  const found=products.filter(p=>(!q||`${p.name} ${p.brand} ${p.colour}`.toLowerCase().includes(q))&&(!brands.length||brands.includes(p.brand.toLowerCase()))&&(!styles.length||styles.includes(p.style))&&(!surface||(p.surfaces.includes(surface)||p.suggestedSurfaces.includes(surface))));
   if(params.get('sort')==='az') found.sort((a,b)=>a.name.localeCompare(b.name));
   if(params.get('sort')==='za') found.sort((a,b)=>b.name.localeCompare(a.name));
   return found;
