@@ -44,8 +44,8 @@ test('filters, surface selection, mobile menu and reduced motion',async({page})=
  await expect(page.locator('#main-nav')).toBeVisible();await page.keyboard.press('Escape');await expect(page.locator('#main-nav')).not.toBeVisible();
  await page.locator('.surface-card').filter({hasText:'Turf Pendek'}).click();
  await expect(page.locator('.empty')).toContainText('Kesesuaian tapak');await expect(page.locator('.product-card')).toHaveCount(0);
- await page.goto('/shop');await page.getByRole('checkbox',{name:'adidas',exact:true}).check();await page.getByRole('button',{name:'Tapis kasut'}).click();await expect(page.locator('.product-card')).toHaveCount(5);
- await page.getByLabel('Carian').fill('not-a-shoe');await page.getByRole('button',{name:'Tapis kasut'}).click();await expect(page.locator('.product-card')).toHaveCount(0);
+ await page.goto('/shop');await page.getByRole('checkbox',{name:'adidas',exact:true}).check();await expect(page.locator('.product-card')).toHaveCount(5);
+ await page.getByLabel('Carian').fill('not-a-shoe');await expect(page.locator('.product-card')).toHaveCount(0);
 });
 test('WhatsApp follows cross-tab edits and empty cart can clear personal details',async({page,context})=>{
  await page.goto('/kasut/red-gold');

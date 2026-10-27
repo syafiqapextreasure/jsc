@@ -8,6 +8,19 @@ const origin='https://shop.example';
 const get=(path,env={})=>worker.fetch(new Request(origin+path),env);
 const schemas=html=>JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 
+test('surface filtering combines with brand, style and search once stock is classified',async()=>{
+ const shoe=products.find(p=>p.slug==='mint-speed');
+ shoe.surfaces.push('fg');
+ try {
+  assert.deepEqual(filterProducts(new URLSearchParams('padang=fg&jenama=nike&q=mint')).map(p=>p.slug),['mint-speed']);
+  assert.deepEqual(filterProducts(new URLSearchParams('padang=fg&jenama=adidas')),[]);
+  const html=await(await get('/shop?padang=fg&jenama=nike')).text();
+  assert.ok(html.includes('1 KASUT DITEMUI'));
+  assert.ok(html.includes('name="padang" value="fg"'));
+  assert.match(html,/data-surface="ag" href="\/shop\?jenama=nike&amp;padang=ag"/);
+ } finally {shoe.surfaces.length=0}
+});
+
 test('all public pages render a real document, one main heading and canonical URL', async()=>{
   for(const path of publicPaths){
     const response=await get(path),html=await response.text();

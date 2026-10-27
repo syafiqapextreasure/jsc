@@ -1,0 +1,29 @@
+import {test,expect} from '@playwright/test';
+
+test('catalog filters update in place and combine with surface tabs',async({page})=>{
+ await page.goto('/shop');
+ await page.evaluate(()=>window.filterPageMarker=true);
+ await expect(page.getByRole('button',{name:'Tapis kasut'})).toHaveCount(0);
+ await page.getByRole('checkbox',{name:'adidas',exact:true}).check();
+ await expect(page.locator('.product-card')).toHaveCount(5);
+ await page.getByRole('checkbox',{name:'Tanpa tali',exact:true}).check();
+ await expect(page.locator('.product-card')).toHaveCount(3);
+ await page.locator('#sort').selectOption('za');
+ await expect(page.locator('.product-card h3').first()).toHaveText('Red White Control');
+ await page.locator('.surface-tabs [data-surface="tf"]').click();
+ await expect(page.locator('.product-card')).toHaveCount(0);
+ await expect(page.locator('.surface-tabs [data-surface="tf"]')).toHaveAttribute('aria-current','page');
+ await expect(page).toHaveURL(/padang=tf/);
+ await expect(page.getByRole('checkbox',{name:'adidas',exact:true})).toBeChecked();
+ await page.locator('.surface-tabs [data-surface=""]').click();
+ await expect(page.locator('.product-card')).toHaveCount(3);
+ await page.getByLabel('Carian').fill('leopard');
+ await expect(page.locator('.product-card')).toHaveCount(1);
+ await expect(page.getByLabel('Carian')).toBeFocused();
+ await page.locator('#catalog-filters .text-link').click();
+ await expect(page.locator('.product-card')).toHaveCount(9);
+ expect(await page.evaluate(()=>window.filterPageMarker)).toBe(true);
+ await page.goBack();
+ await expect(page.getByLabel('Carian')).toHaveValue('leopard');
+ await expect(page.locator('.product-card')).toHaveCount(1);
+});
