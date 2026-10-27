@@ -74,4 +74,3 @@ The browser stores cart and review information locally on the customer's device.
 The configured order destination is `60199628865` in international digits-only form. Search the repository for that number when changing it so direct enquiry links, cart checkout, contact copy and structured metadata stay consistent.
 
 Before announcing the store, open the deployed site on a phone, add a shoe with a requested size, review the message and confirm that WhatsApp targets the correct number. Keep real prices, policies and surface assignments current as they become available.
-
