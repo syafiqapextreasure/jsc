@@ -41,6 +41,7 @@ label{display:block;font-weight:600;margin:1rem 0 .35rem}input,select,textarea{d
 @media(min-width:681px){
  .hero h1{font-size:9vw;line-height:.98;width:100%;transform:none}
  .hero.shallow h1{font-size:7.2vw}
+ .hero[data-hero="hero-help"] h1{font-size:12vw;letter-spacing:-.015em}
  .hero-copy{width:57%;padding-top:2rem;padding-bottom:2rem}
  .hero p{font-size:1.2rem}
 }
