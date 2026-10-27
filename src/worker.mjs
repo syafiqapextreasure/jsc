@@ -23,7 +23,7 @@ export default {async fetch(request,env={}) {
  if(path==='/')body=v.home();
  else if(path==='/shop'){title='Shop Semua Kasut Bola';body=v.shop(url.searchParams)}
  else if(path==='/padang'){title='Panduan Padang FG, AG, TF & Indoor';body=v.surfacePage()}
- else if(surfaces.some(s=>path==='/padang/'+s.id)){const s=surfaces.find(s=>path.endsWith('/'+s.id));title=`Kasut untuk ${s.name} (${s.id.toUpperCase()})`;description=s.detail;body=v.surfacePage(s.id)}
+ else if(surfaces.some(s=>path==='/padang/'+s.id)){const s=surfaces.find(s=>path.endsWith('/'+s.id));title=`Kasut untuk ${s.name} (${s.id.toUpperCase()})`;description=s.detail;body=v.surfacePage(s.id,url.searchParams)}
  else if(path==='/jenama'){title='Koleksi Mengikut Jenama';body=v.brands()}
  else if(['/jenama/nike','/jenama/adidas'].includes(path)){const brand=path.endsWith('nike')?'Nike':'adidas';title=`Koleksi ${brand}`;body=v.shop(url.searchParams,brand)}
  else if((product=products.find(p=>path==='/kasut/'+p.slug))){title=`${product.name} — ${product.colour}`;description=`Lihat ${product.name}, ${product.colour}. Semak harga, saiz, stok dan jenis tapak melalui WhatsApp Jang Sport Center. Stoking percuma dengan pembelian.`;body=v.product(product)}

@@ -66,6 +66,7 @@ if(filterForm){
    const results=doc.querySelector('#catalog-results');if(!results)throw new Error('Missing results');
    if(current!==version)return;
    $('#catalog-results').replaceWith(results);
+   const nextHero=doc.querySelector('.hero');if(nextHero&&$('.hero')){$('.hero').replaceWith(nextHero);hero=nextHero}
    const tabs=doc.querySelector('.surface-tabs');if(tabs&&$('.surface-tabs'))$('.surface-tabs').replaceWith(tabs);
    history.pushState({catalog:true},'',url);
   }catch(error){if(error.name!=='AbortError'&&current===version){notify('Filter tidak dapat dimuatkan. Sila cuba lagi.')}}
@@ -86,7 +87,7 @@ if(filterForm){
  });
  window.addEventListener('popstate',()=>location.reload());
 }
-const hero=$('.hero');let scheduled=false;
+let hero=$('.hero');let scheduled=false;
 function parallax(){if(scheduled||motion.matches||innerWidth<681||!hero)return;scheduled=true;requestAnimationFrame(()=>{const y=Math.max(0,Math.min(60,scrollY*.12));hero.style.setProperty('--parallax',`${y}px`);scheduled=false})}
 window.addEventListener('scroll',parallax,{passive:true});
 motion.addEventListener('change',()=>{if(motion.matches)hero?.style.setProperty('--parallax','0px')});

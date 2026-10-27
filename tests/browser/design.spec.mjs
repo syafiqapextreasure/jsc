@@ -28,6 +28,38 @@ test('reading text grows with desktop resolution and remains usable at zoom',asy
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
  await expect(page.getByLabel('Saiz yang dicari',{exact:true})).toBeVisible();
 });
+
+test('every page scales its title and body on large screens',async({page})=>{
+ test.setTimeout(180000);
+ const routes=[...pages.map(p=>p[1]),'/padang/fg','/padang/ag','/padang/ic'];
+ for(const route of routes){
+  const sizes=[];
+  for(const width of [1440,2560,3840]){
+   await page.setViewportSize({width,height:1200});await page.goto(route);await page.evaluate(()=>document.fonts.ready);
+   sizes.push(await page.evaluate(()=>({body:parseFloat(getComputedStyle(document.body).fontSize),title:parseFloat(getComputedStyle(document.querySelector('h1')).fontSize),overflow:document.documentElement.scrollWidth>innerWidth+1})));
+  }
+  expect(sizes.every(s=>!s.overflow),route).toBe(true);
+  expect(sizes[1].body,route).toBeGreaterThan(sizes[0].body*1.5);
+  expect(sizes[2].title,route).toBeGreaterThan(sizes[1].title);
+  if(route==='/bantuan'){
+   expect(sizes[0].title).toBeGreaterThanOrEqual(125);
+   await page.screenshot({path:'test-results/design-3840-help.png',fullPage:true});
+  }
+ }
+});
+
+test('each surface has its field guide and filterable catalogue',async({page})=>{
+ for(const surface of ['fg','ag','tf','ic']){
+  await page.goto('/padang/'+surface);
+  await expect(page.locator('.field-info')).toContainText('Panduan semua padang');
+  await expect(page.locator('.field-sole')).toBeVisible();
+  await expect(page.locator('#catalog-filters')).toBeVisible();
+  await expect(page.locator('.results-count')).toContainText(['fg','ag'].includes(surface)?'9 KASUT':'0 KASUT');
+ }
+ await page.locator('.surface-tabs [data-surface="ag"]').click();
+ await expect(page.locator('.field-info h2')).toContainText('Rumput Tiruan');
+ await expect(page.locator('.product-card')).toHaveCount(9);
+});
 test('restored helpers prepare correct WhatsApp enquiries',async({page})=>{
  await page.goto('/panduan-saiz');await page.getByLabel('Panjang kaki (cm)').fill('26.5');await page.getByRole('button',{name:'Semak saiz di WhatsApp'}).click();
  expect(decodeURIComponent(await page.locator('.prepared-message').getAttribute('href'))).toContain('26.5 cm');
