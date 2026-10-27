@@ -10,7 +10,9 @@ for path in sorted(source.glob('*.png')):
     with Image.open(path) as original:
         rgba = original.convert('RGBA')
         destination = target / (path.stem + '.webp')
-        rgba.save(destination, 'WEBP', lossless=True, quality=100, method=6, exact=True)
+        unchanged = destination.exists() and Image.open(destination).convert('RGBA').tobytes() == rgba.tobytes()
+        if not unchanged:
+            rgba.save(destination, 'WEBP', lossless=True, quality=100, method=6, exact=True)
         decoded = Image.open(destination).convert('RGBA')
         assert rgba.tobytes() == decoded.tobytes(), path.name
         manifest.append(dict(name=path.stem, width=rgba.width, height=rgba.height,

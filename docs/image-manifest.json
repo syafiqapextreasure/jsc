@@ -90,6 +90,24 @@
     "sha256": "8e7e40165c3938a263219905b2ef26aeebdc394ce2773044aa30d95bdc7a3a1c"
   },
   {
+    "name": "hero-short-ball",
+    "width": 2172,
+    "height": 724,
+    "pngBytes": 2402265,
+    "webpBytes": 1731682,
+    "decodedPixelsIdentical": true,
+    "sha256": "362dc5c6af0263c40ba8c4c11b1d20c7d4c8e2d714c8bdfbba9a5648522ceb60"
+  },
+  {
+    "name": "hero-short-mint",
+    "width": 2172,
+    "height": 724,
+    "pngBytes": 2319204,
+    "webpBytes": 1621086,
+    "decodedPixelsIdentical": true,
+    "sha256": "2dff56faeec2f220aa2580cff5da4e339d10f0dda103fdfc3c7b922adc91bdf5"
+  },
+  {
     "name": "hero-size",
     "width": 1983,
     "height": 793,
@@ -108,6 +126,15 @@
     "sha256": "61e9647bd7678d6fa613a46573fc4ed534a8009188d9a4188c97075766830c75"
   },
   {
+    "name": "home-gift-strip",
+    "width": 2172,
+    "height": 724,
+    "pngBytes": 1591617,
+    "webpBytes": 941758,
+    "decodedPixelsIdentical": true,
+    "sha256": "03b63b7097f6b565d615bbacfc0a6e393046579088a85df14fde383dea41e79a"
+  },
+  {
     "name": "measurement",
     "width": 1536,
     "height": 1024,
@@ -115,6 +142,42 @@
     "webpBytes": 1625596,
     "decodedPixelsIdentical": true,
     "sha256": "1891432c4b73e95c8ef932f44b9d0cefeccdccc6370b701cc2fd1cb4850a4d61"
+  },
+  {
+    "name": "nike-magenta-kobe",
+    "width": 1536,
+    "height": 1024,
+    "pngBytes": 2870486,
+    "webpBytes": 1997694,
+    "decodedPixelsIdentical": true,
+    "sha256": "21880dd4e1274fa42542ed20a2309ee08f0b852ff1bfb6d304d17b54a42d703a"
+  },
+  {
+    "name": "nike-mint-speed",
+    "width": 1536,
+    "height": 1024,
+    "pngBytes": 2817807,
+    "webpBytes": 1944154,
+    "decodedPixelsIdentical": true,
+    "sha256": "cb7b0c0bd390a3237ba856c25a3e105450aea7a05f54acb7e54fdaa876603dde"
+  },
+  {
+    "name": "nike-pink-speed",
+    "width": 1536,
+    "height": 1024,
+    "pngBytes": 2746222,
+    "webpBytes": 1833836,
+    "decodedPixelsIdentical": true,
+    "sha256": "0ec92d643a0854c060bfee3b4ae02be8d28c9a7d28df6489c3f84514a7646917"
+  },
+  {
+    "name": "nike-red-gold",
+    "width": 1536,
+    "height": 1024,
+    "pngBytes": 2835400,
+    "webpBytes": 2032672,
+    "decodedPixelsIdentical": true,
+    "sha256": "0661bfae4f3303a3ac0c09aa684560dbd7c8e26c10089e65ba4e31ff2d42b752"
   },
   {
     "name": "outsole-ag",
@@ -228,10 +291,10 @@
     "name": "surface-ag",
     "width": 1536,
     "height": 1024,
-    "pngBytes": 2465306,
-    "webpBytes": 1700072,
+    "pngBytes": 2091036,
+    "webpBytes": 1386368,
     "decodedPixelsIdentical": true,
-    "sha256": "1e1babf9f7ce228b7d1b9299078912571c57a799ded744e833ff023f72fa9efd"
+    "sha256": "24257d154c4d7db0d096544d79a5be81e9b58007713b27b26b1bcbb44ca29d7c"
   },
   {
     "name": "surface-fg",
@@ -246,10 +309,10 @@
     "name": "surface-ic",
     "width": 1536,
     "height": 1024,
-    "pngBytes": 2312094,
-    "webpBytes": 1581856,
+    "pngBytes": 2192886,
+    "webpBytes": 1480526,
     "decodedPixelsIdentical": true,
-    "sha256": "8e364c4c124397d5bda7ce60c49df102cfd90dc8fc13b6dcd563aa13d76fc2dc"
+    "sha256": "ea38bb83ae269cc02276cdf7d09f3a6a4c6ec945bde0e39dbacfe6eaed2c101c"
   },
   {
     "name": "surface-tf",

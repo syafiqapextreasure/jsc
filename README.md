@@ -59,12 +59,12 @@ Routes are extensionless. For example, `/shop.html` redirects to `/shop`, and `/
 - `src/views.mjs`: server-rendered page content, individual hero compositions and standalone image references.
 - `public/app.mjs` and `public/cart-core.mjs`: browser interactions, local cart and prepared WhatsApp message.
 - `public/style.css`: responsive layout, typography, animation and reduced-motion behaviour.
-- `public/assets/v4/`: 32 standalone photographs regenerated from the approved page references with the built-in image-generation tool. No page-screenshot crops are used by the current templates.
+- `public/assets/v4/`: 39 standalone photographs regenerated from the approved page references with the built-in image-generation tool. No page-screenshot crops are used by the current templates.
 - `docs/image-manifest.json`: native dimensions, byte sizes, hashes and lossless pixel verification for every current image.
 - `docs/image-generation-prompts.json`: generation prompts and local source references. Original PNG masters remain in the author's `outputs/night-match-v4/assets` folder.
 - `docs/design-audit-v2.md`: page-by-page comparison and original implementation gaps. See `docs/asset-provenance.md` for earlier asset history and font licensing.
 
-The current WebP files total 53,307,290 bytes versus 79,045,833 bytes for their PNG masters (32.6% smaller). They are lossless, with decoded RGBA pixels verified as identical. They are not artificially upscaled: most wide heroes are 1983×793, product photos are 1536×1024, and exact exceptions are in the manifest. AI regeneration preserves the reference composition as a visual reconstruction; it is not pixel-identical to the original mockup. Lazy loading, image caching and reserved aspect ratios are used throughout.
+The current WebP files total 64,995,138 bytes versus 96,135,356 bytes for their PNG masters (32.4% smaller). They are lossless, with decoded RGBA pixels verified as identical. They are not artificially upscaled: most wide heroes are 1983×793, product photos are 1536×1024, and exact exceptions are in the manifest. AI regeneration preserves the reference composition as a visual reconstruction; it is not pixel-identical to the original mockup. Lazy loading, image caching and reserved aspect ratios are used throughout.
 
 Reading text uses a fluid root size of `clamp(18px, 16px + 0.35vw, 34px)`. This increases body text at desktop widths instead of only enlarging headings. Reduced-motion preferences disable parallax, hover movement and transitions. Browser tests cover all fourteen reference layouts and wide-screen typography.
 

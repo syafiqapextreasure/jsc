@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 import {writeFileSync} from 'node:fs';
-const pages=[['01-home','/','hero-home'],['02-surface-guide','/padang','hero-ball'],['03-turf-category','/padang/tf','hero-turf'],['04-shop','/shop','hero-ball'],['05-brands','/jenama','stadium'],['06-nike','/jenama/nike','hero-nike'],['07-adidas','/jenama/adidas','hero-adidas'],['08-product','/kasut/mint-speed',null],['09-cart','/cart','hero-home'],['10-order-review','/pesanan','hero-home'],['11-whatsapp','/whatsapp','whatsapp-stage'],['12-size-guide','/panduan-saiz','hero-size'],['13-about','/tentang-kami','hero-about'],['14-help','/bantuan','hero-help']];
+const pages=[['01-home','/','hero-home'],['02-surface-guide','/padang','hero-ball'],['03-turf-category','/padang/tf','hero-turf'],['04-shop','/shop','hero-short-ball'],['05-brands','/jenama','stadium'],['06-nike','/jenama/nike','hero-nike'],['07-adidas','/jenama/adidas','hero-adidas'],['08-product','/kasut/mint-speed',null],['09-cart','/cart','hero-short-mint'],['10-order-review','/pesanan','hero-short-mint'],['11-whatsapp','/whatsapp','whatsapp-stage'],['12-size-guide','/panduan-saiz','hero-size'],['13-about','/tentang-kami','hero-about'],['14-help','/bantuan','hero-help']];
 for(const width of [390,1440])test(`all fourteen approved layouts at ${width}`,async({page})=>{
  test.setTimeout(180000);
  await page.setViewportSize({width,height:1000});

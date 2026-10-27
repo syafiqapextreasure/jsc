@@ -83,9 +83,94 @@
         ],
         "generatedOriginalPath": "C:/Users/user/.codex/generated_images/01a17d23-d135-7253-b9d8-4b9f2cab9b9c/exec-4938b43e-94fb-4a88-916b-4eea433f680a.png",
         "prompt": "Use case: precise-object-edit. Create the complete tall photographic stadium background ONLY from supplied WhatsApp page, with every navigation bar, heading, WhatsApp icon, summary card, button, footer, and all UI text removed. Requested portrait 1536x2304 maximum available native detail. Preserve the distinctive full-height night stadium curves and cool white floodlights wrapping around upper corners and outer sides. The TOP 70% should have empty dark navy-black center space for live HTML heading and order-summary card, while stadium tiers and lights remain around its sides. A single large mint-green multicolour Nike-style football boot, same exact green laces, black swoosh, pink/blue streaks, original sole/studs and dark22 heel marking as source, lies bottom-center on wet bright green grass. Shoe fills lower quarter, toe pointing left, heel right, complete outline inside image, no cropping. Photorealistic source camera and product identity must remain faithful. Dark atmospheric stadium sky in center, textured grass foreground. NO text, UI, logos outside the shoe, card-shaped rectangles, badges, watermark, extra shoe or extra ball."
+      },
+      {
+        "file": "assets/home-gift-strip.png",
+        "width": 2172,
+        "height": 724,
+        "sourceReferences": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/01-home.png"
+        ],
+        "generatedOriginalPath": "C:/Users/user/.codex/generated_images/01a17d23-d135-7253-b9d8-4b9f2cab9b9c/exec-b46dc6b8-38e8-47a9-ae9f-8d582c953531.png",
+        "prompt": "Use case: precise-object-edit. Extract and faithfully recreate ONLY the thin free-socks promotional strip in the supplied approved home page reference, located immediately below the four playing-surface cards and above the product heading. Create a clean standalone background image, never a webpage screenshot. Very wide landscape banner requested 3840x600, highest native detail. Same exact composition as reference: luminous electric-blue flowing light ribbons and fine cyan horizontal edge glow across a nearly black navy background. A pair of realistic white crew football socks with black stripes positioned at LEFT about 20% across the canvas, angled slightly, toes pointing lower-left, visible entirety with breathing room. Keep socks in the left quarter. Center 32%-72% remains dark empty blue-black negative space for real HTML heading. At far RIGHT 78%-100%, a diagonal macro closeup of blue ribbed knitted sock fabric with visible tight vertical ribbed fibers, cropped at the right edge, matching reference. Blue light ribbons flow behind the socks across the whole strip. This must be an extremely shallow horizontal promotional-strip asset, not a stadium hero or shoe photograph. Preserve reference arrangement, colors and textile details faithfully. Remove all words, letters, logo, typography, buttons, borders, cards and webpage UI. No text anywhere. No shoes or balls. Crisp photoreal fabric and controlled blue light, no additional objects.",
+        "compositionNote": "Socks left around20%; fabric far right; generated strip lies between y~215 and529 on full724px canvas; dark top/bottom margin may be cropped in CSS."
+      },
+      {
+        "file": "assets/hero-short-ball.png",
+        "width": 2172,
+        "height": 724,
+        "sourceReferences": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/04-shop.png"
+        ],
+        "generatedOriginalPath": "C:/Users/user/.codex/generated_images/01a17d23-d135-7253-b9d8-4b9f2cab9b9c/exec-3b6c1b19-07f3-4b47-bffc-1cdd885eb42b.png",
+        "prompt": "Use case: precise-object-edit. Create ONLY a clean standalone stadium hero background image faithfully based on upper hero of approved 04-shop reference. No webpage UI. Requested 3840x1280 panorama 3:1, highest native resolution. Continuous seamless full-width photoreal blue-black night football stadium, curving blue terraces, bright white floodlights along upper arc, dew-lit natural green grass lower area. Exact same black-white-blue wet football as reference sits at RIGHT, fully within rightmost 35% of canvas. Entire round ball visible including bottom; its bounding box occupies only central 55% of canvas height from y23% to y78%, with generous space above and below. Ball around x83%, no edge cropping. Lower grass extends seamlessly across image. Empty dark LEFT 60% for real HTML heading. Retain reference lighting, atmosphere, detail and color. Compose for safe centered 4:1 viewport crop: all of ball must remain within central vertical 55%. No text, typography, headers, lines, buttons, product grids, logos, UI, borders, watermarks or shoes. Single continuous photograph, no collage, no black boxed overlays, no compositing seams."
+      },
+      {
+        "file": "assets/hero-short-mint.png",
+        "width": 2172,
+        "height": 724,
+        "sourceReferences": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/09-cart.png"
+        ],
+        "generatedOriginalPath": "C:/Users/user/.codex/generated_images/01a17d23-d135-7253-b9d8-4b9f2cab9b9c/exec-f7fdd314-6b56-4f20-9de5-bb20e3f7ee51.png",
+        "prompt": "Use case: precise-object-edit. Create ONLY a clean standalone stadium hero background photograph faithfully based on upper hero of approved 09-cart reference. No webpage UI. Requested 3840x1280 panorama 3:1 highest native resolution. Continuous full-width blue-black night football stadium, curving dark blue terraces and bright white floodlights, dew-lit grass lower area. Same exact mint-green multicolour football boot with black swoosh, black heel22 marking, laces and translucent mint sole/studs as reference. Three-quarter lateral view with toe pointing left, heel right, angled slightly up-right, rests on grass. ENTIRE shoe including all studs must fit within rightmost35% of image, bounding box x64%-95% and y24%-77%. Reduce shoe size enough to leave generous space above and below, preserving exact silhouette and details. Empty dark left60% of continuous stadium for HTML heading. Compose for safe centered4:1 viewport crop, all shoe visible inside central55% of height. No text, typography, UI, headers, cards, buttons, lines, borders, labels or additional objects, except original shoe markings. No split panels or collage or compositing seams. Full uninterrupted grass and stadium across entire panorama."
       }
     ]
   },
+  "nike-generation-prompts.json": [
+    {
+      "slug": "nike-pink-speed",
+      "prompt": "Use case: precise-object-edit. Create ONE standalone product photograph for the Nike collection page. Image 1 is the exact Pink Speed shoe identity, Image 2 is the approved Nike collection layout; reproduce the atmosphere and camera angle of the FIRST collection product card, not the hero. Fluorescent pink boot, pink laces, offwhite collar, black swoosh, fine pale vertical streak texture, translucent pale gold studs, exact proportions and construction. Full shoe heel LEFT, toe RIGHT, three-quarter side view. Behind it: blurred large football stadium at night, cool blue white floodlights along the upper background, subtle warm crowd bokeh, wet dark reflective floor under the shoe. This is stadium photography, not a grey studio. Entire shoe and studs fully visible, around 12 percent padding. Landscape 3:2, requested 2048x1360 highest available detail. No UI, no card border, no labels, no corner brand logo, no text outside existing shoe markings, no other shoes or props. Preserve the shoe identity exactly.",
+      "references": [
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/01-pink-speed.png",
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+      ],
+      "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-13fb0e4a-6898-485d-8e84-c481bee8d52a.png",
+      "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-pink-speed.png",
+      "width": 1536,
+      "height": 1024,
+      "visuallyInspected": true
+    },
+    {
+      "slug": "nike-mint-speed",
+      "prompt": "Use case: precise-object-edit. Create ONE standalone Mint Speed football boot product photo for Nike collection. Image 1 gives exact shoe identity; Image 2 is approved Nike page. Match SECOND collection card camera angle and stadium atmosphere, not hero. Preserve mint laces, mint green collar and sole, pastel blue purple pink finely streaked upper, black Nike swoosh, translucent studs and exact construction. Shoe TOE LEFT and HEEL RIGHT in a mostly side-on three-quarter view matching second card in Image 2. Behind it: blurred large night football stadium, cool white blue floodlights along upper background, warm crowd bokeh, and wet black reflective floor under boot. Complete shoe and every stud within frame, approximately 12 percent padding. Landscape 3:2, requested 2048x1360 highest available detail. No UI, card border, labels, corner brand logos, extra shoes, props or typography outside original shoe markings. Faithful exact product identity and composition.",
+      "references": [
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/03-mint-speed.png",
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+      ],
+      "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-61b14be5-d48c-4ef3-84c5-ded349e147c2.png",
+      "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-mint-speed.png",
+      "width": 1536,
+      "height": 1024,
+      "visuallyInspected": true
+    },
+    {
+      "slug": "nike-magenta-kobe",
+      "prompt": "Use case: precise-object-edit. Create ONE standalone Magenta Kobe football boot product photo for Nike collection. Image 1 gives exact shoe identity; Image 2 approved Nike page gives THIRD collection card camera angle and stadium setting. Preserve vivid pink magenta purple textured upper, black laces and collar, white outlined KOBE lettering, yellow tongue and forefoot markings, pink sole, translucent gold studs and precise shoe shape. Shoe TOE LEFT and HEEL RIGHT, three-quarter side view as the third card. Background: blurred large night football stadium, blue-white floodlights in upper background, warm crowd bokeh, dark wet reflective floor beneath shoe. Entire boot and studs fully in frame with 12 percent padding. Landscape 3:2 requested 2048x1360 at highest available detail. No UI, borders, labels, corner logos, typography outside original shoe markings, no extra shoes or props. Faithfully preserve product and composition, replace only studio environment with approved stadium atmosphere.",
+      "references": [
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/04-magenta-kobe.png",
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+      ],
+      "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-cb7f5835-71b6-4882-8def-5e421738c169.png",
+      "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-magenta-kobe.png",
+      "width": 1536,
+      "height": 1024,
+      "visuallyInspected": true
+    },
+    {
+      "slug": "nike-red-gold",
+      "prompt": "Use case: precise-object-edit. Create ONE standalone Red Gold football boot product photo for Nike collection. Image 1 gives exact shoe identity; Image 2 approved Nike page gives FOURTH collection card angle and stadium setting. Preserve brilliant red knitted upper and red laces, red low collar, perforated red tongue, large metallic GOLD Nike swoosh bordered black, red sole and translucent gold studs, precise proportions. Shoe TOE LEFT and HEEL RIGHT in three-quarter side view to match fourth card in Image 2. Blurred large football stadium at night behind, cool blue white floodlights in upper background, warm crowd bokeh, wet dark reflective floor beneath shoe. Whole boot including all studs fully in frame with 12 percent padding. Landscape 3:2 requested 2048x1360 at highest available detail. No UI, card borders, labels, corner brand logo, typography outside original shoe markings, extra shoes or props. Exact product, only background and camera angle changed as instructed.",
+      "references": [
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/05-red-gold.png",
+        "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+      ],
+      "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-b0ec9f8d-f909-4943-8c54-9ec29f052c1c.png",
+      "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-red-gold.png",
+      "width": 1536,
+      "height": 1024,
+      "visuallyInspected": true
+    }
+  ],
   "product-generation-prompts.json": {
     "tool": "built-in image_gen.imagegen",
     "requestedModel": "gpt-image-2",
@@ -217,6 +302,60 @@
         "height": 1024,
         "visuallyInspected": true
       }
+    ],
+    "nikeCollectionAssets": [
+      {
+        "slug": "nike-pink-speed",
+        "prompt": "Use case: precise-object-edit. Create ONE standalone product photograph for the Nike collection page. Image 1 is the exact Pink Speed shoe identity, Image 2 is the approved Nike collection layout; reproduce the atmosphere and camera angle of the FIRST collection product card, not the hero. Fluorescent pink boot, pink laces, offwhite collar, black swoosh, fine pale vertical streak texture, translucent pale gold studs, exact proportions and construction. Full shoe heel LEFT, toe RIGHT, three-quarter side view. Behind it: blurred large football stadium at night, cool blue white floodlights along the upper background, subtle warm crowd bokeh, wet dark reflective floor under the shoe. This is stadium photography, not a grey studio. Entire shoe and studs fully visible, around 12 percent padding. Landscape 3:2, requested 2048x1360 highest available detail. No UI, no card border, no labels, no corner brand logo, no text outside existing shoe markings, no other shoes or props. Preserve the shoe identity exactly.",
+        "references": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/01-pink-speed.png",
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+        ],
+        "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-13fb0e4a-6898-485d-8e84-c481bee8d52a.png",
+        "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-pink-speed.png",
+        "width": 1536,
+        "height": 1024,
+        "visuallyInspected": true
+      },
+      {
+        "slug": "nike-mint-speed",
+        "prompt": "Use case: precise-object-edit. Create ONE standalone Mint Speed football boot product photo for Nike collection. Image 1 gives exact shoe identity; Image 2 is approved Nike page. Match SECOND collection card camera angle and stadium atmosphere, not hero. Preserve mint laces, mint green collar and sole, pastel blue purple pink finely streaked upper, black Nike swoosh, translucent studs and exact construction. Shoe TOE LEFT and HEEL RIGHT in a mostly side-on three-quarter view matching second card in Image 2. Behind it: blurred large night football stadium, cool white blue floodlights along upper background, warm crowd bokeh, and wet black reflective floor under boot. Complete shoe and every stud within frame, approximately 12 percent padding. Landscape 3:2, requested 2048x1360 highest available detail. No UI, card border, labels, corner brand logos, extra shoes, props or typography outside original shoe markings. Faithful exact product identity and composition.",
+        "references": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/03-mint-speed.png",
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+        ],
+        "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-61b14be5-d48c-4ef3-84c5-ded349e147c2.png",
+        "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-mint-speed.png",
+        "width": 1536,
+        "height": 1024,
+        "visuallyInspected": true
+      },
+      {
+        "slug": "nike-magenta-kobe",
+        "prompt": "Use case: precise-object-edit. Create ONE standalone Magenta Kobe football boot product photo for Nike collection. Image 1 gives exact shoe identity; Image 2 approved Nike page gives THIRD collection card camera angle and stadium setting. Preserve vivid pink magenta purple textured upper, black laces and collar, white outlined KOBE lettering, yellow tongue and forefoot markings, pink sole, translucent gold studs and precise shoe shape. Shoe TOE LEFT and HEEL RIGHT, three-quarter side view as the third card. Background: blurred large night football stadium, blue-white floodlights in upper background, warm crowd bokeh, dark wet reflective floor beneath shoe. Entire boot and studs fully in frame with 12 percent padding. Landscape 3:2 requested 2048x1360 at highest available detail. No UI, borders, labels, corner logos, typography outside original shoe markings, no extra shoes or props. Faithfully preserve product and composition, replace only studio environment with approved stadium atmosphere.",
+        "references": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/04-magenta-kobe.png",
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+        ],
+        "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-cb7f5835-71b6-4882-8def-5e421738c169.png",
+        "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-magenta-kobe.png",
+        "width": 1536,
+        "height": 1024,
+        "visuallyInspected": true
+      },
+      {
+        "slug": "nike-red-gold",
+        "prompt": "Use case: precise-object-edit. Create ONE standalone Red Gold football boot product photo for Nike collection. Image 1 gives exact shoe identity; Image 2 approved Nike page gives FOURTH collection card angle and stadium setting. Preserve brilliant red knitted upper and red laces, red low collar, perforated red tongue, large metallic GOLD Nike swoosh bordered black, red sole and translucent gold studs, precise proportions. Shoe TOE LEFT and HEEL RIGHT in three-quarter side view to match fourth card in Image 2. Blurred large football stadium at night behind, cool blue white floodlights in upper background, warm crowd bokeh, wet dark reflective floor beneath shoe. Whole boot including all studs fully in frame with 12 percent padding. Landscape 3:2 requested 2048x1360 at highest available detail. No UI, card borders, labels, corner brand logo, typography outside original shoe markings, extra shoes or props. Exact product, only background and camera angle changed as instructed.",
+        "references": [
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/products/05-red-gold.png",
+          "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v3/pages/06-nike.png"
+        ],
+        "generatedSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d26-9454-7362-9177-e7e8d4a65d1c\\exec-b0ec9f8d-f909-4943-8c54-9ec29f052c1c.png",
+        "path": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/nike-red-gold.png",
+        "width": 1536,
+        "height": 1024,
+        "visuallyInspected": true
+      }
     ]
   },
   "root-generation-prompts.json": {
@@ -247,15 +386,26 @@
     {
       "name": "surface-ag",
       "ref": "02-surface-guide.png",
-      "prompt": "Use case: photorealistic-natural. Create one standalone website category photograph matching the ARTIFICIAL GRASS tile in the attached approved website reference. Input is composition/style reference only; recreate only the artificial-grass photograph, not the webpage. Close ground-level green synthetic football turf, medium-length upright uniform artificial fibres with small black rubber infill visible, diagonal white line receding into distance and blurred cool blue stadium floodlights. No shoe, no ball, no person, no text, no UI, no border, no logo. Cinematic realistic Night Match cool blue lighting, deep rich green synthetic pitch, dark blue distance. Landscape 1536x1024, sharp foreground, photographic detail.",
-      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-1c9e1dd4-d04a-4ec9-8437-32e06c535f18.png",
+      "prompt": "Use case: precise-object-edit. Recreate ONLY the photograph in the TOP RIGHT category card labelled RUMPUT TIRUAN / AG in this attached approved website reference. This card is below the main hero. Do not recreate page or typography. Exact composition: extreme macro camera at fibre-base height, tall individual bright green synthetic turf blades projecting upward among many prominent black rubber infill granules, large detailed rubber pellets dominate foreground and middle ground. Focus is on the black granules and long plastic green fibres, revealing artificial material. Shallow depth of field: a narrow out-of-focus strip of green at distant top, and small blurred white stadium-light bokeh along very top edge. NO distant wide football pitch, NO white pitch line, NO goal, NO ball, NO shoe, NO crowd stands. Match original tight macro detail and blue-cool stadium night light. Image content edge to edge with no text, no labels, no interface, no borders, no gradient added for text. Landscape high-resolution 1536x1024.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-d62059b9-9300-426c-87ab-1b6a8a621224.png",
       "output": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/surface-ag.png",
       "mode": "built-in image_gen",
       "actual_dimensions": [
         1536,
         1024
       ],
-      "hasAlpha": false
+      "hasAlpha": false,
+      "originalSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-1c9e1dd4-d04a-4ec9-8437-32e06c535f18.png",
+      "originalPrompt": "Use case: photorealistic-natural. Create one standalone website category photograph matching the ARTIFICIAL GRASS tile in the attached approved website reference. Input is composition/style reference only; recreate only the artificial-grass photograph, not the webpage. Close ground-level green synthetic football turf, medium-length upright uniform artificial fibres with small black rubber infill visible, diagonal white line receding into distance and blurred cool blue stadium floodlights. No shoe, no ball, no person, no text, no UI, no border, no logo. Cinematic realistic Night Match cool blue lighting, deep rich green synthetic pitch, dark blue distance. Landscape 1536x1024, sharp foreground, photographic detail.",
+      "correction": {
+        "name": "surface-ag",
+        "prompt": "Use case: precise-object-edit. Recreate ONLY the photograph in the TOP RIGHT category card labelled RUMPUT TIRUAN / AG in this attached approved website reference. This card is below the main hero. Do not recreate page or typography. Exact composition: extreme macro camera at fibre-base height, tall individual bright green synthetic turf blades projecting upward among many prominent black rubber infill granules, large detailed rubber pellets dominate foreground and middle ground. Focus is on the black granules and long plastic green fibres, revealing artificial material. Shallow depth of field: a narrow out-of-focus strip of green at distant top, and small blurred white stadium-light bokeh along very top edge. NO distant wide football pitch, NO white pitch line, NO goal, NO ball, NO shoe, NO crowd stands. Match original tight macro detail and blue-cool stadium night light. Image content edge to edge with no text, no labels, no interface, no borders, no gradient added for text. Landscape high-resolution 1536x1024.",
+        "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-d62059b9-9300-426c-87ab-1b6a8a621224.png",
+        "actual_dimensions": [
+          1536,
+          1024
+        ]
+      }
     },
     {
       "name": "surface-tf",
@@ -273,15 +423,26 @@
     {
       "name": "surface-ic",
       "ref": "02-surface-guide.png",
-      "prompt": "Use case: photorealistic-natural. Create one standalone website category photograph matching the INDOOR COURT tile in the attached approved website reference. Input is composition/style reference only; recreate only the indoor court photograph, not the webpage. Low camera almost on polished vivid blue indoor futsal court floor, clear white boundary line and reflected ceiling lights, indoor sports hall walls and goal softly blurred in distance. No grass, no shoe, no ball, no person, no text, no UI, no border, no logo. Cool blue realistic Night Match visual tone, dark perimeter. Landscape 1536x1024, high quality sports photography, sharp near court material.",
-      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-ec010f3e-9513-4ab7-8d93-d0222e63b0d7.png",
+      "prompt": "Use case: precise-object-edit. Recreate ONLY the photograph in the LOWER RIGHT category card labelled INDOOR / IC in this approved website reference. Do not recreate webpage or typography. Exact scene and composition: low wide camera inside futsal hall, beautiful polished WARM HONEY BROWN WOODEN PARQUET court floor filling lower two thirds with thin white court markings curving from left middle toward foreground. Dark deep blue painted walls, large windows at upper left, metal roof beams and warm overhead lights. White rectangular futsal goal at upper right-center against the back blue wall. One black-and-white pentagonal football sits in RIGHT FOREGROUND, fully within image near the right edge, with realistic warm wood reflection and contact shadow. Reference photograph is specifically a warm WOODEN indoor court, not a blue vinyl floor, not outdoor turf. Match framing and camera direction of reference. No humans, no shoes, no text, no labels, no interface, no borders. Natural photographic detail, warm wood contrasts with cool blue walls. Landscape high resolution 1536x1024.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-0e338271-1fa0-4f2a-a9df-78ee6d1ebe11.png",
       "output": "C:/Users/user/Documents/Codex/2026-10-26/i-x20/outputs/night-match-v4/assets/surface-ic.png",
       "mode": "built-in image_gen",
       "actual_dimensions": [
         1536,
         1024
       ],
-      "hasAlpha": false
+      "hasAlpha": false,
+      "originalSource": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-ec010f3e-9513-4ab7-8d93-d0222e63b0d7.png",
+      "originalPrompt": "Use case: photorealistic-natural. Create one standalone website category photograph matching the INDOOR COURT tile in the attached approved website reference. Input is composition/style reference only; recreate only the indoor court photograph, not the webpage. Low camera almost on polished vivid blue indoor futsal court floor, clear white boundary line and reflected ceiling lights, indoor sports hall walls and goal softly blurred in distance. No grass, no shoe, no ball, no person, no text, no UI, no border, no logo. Cool blue realistic Night Match visual tone, dark perimeter. Landscape 1536x1024, high quality sports photography, sharp near court material.",
+      "correction": {
+        "name": "surface-ic",
+        "prompt": "Use case: precise-object-edit. Recreate ONLY the photograph in the LOWER RIGHT category card labelled INDOOR / IC in this approved website reference. Do not recreate webpage or typography. Exact scene and composition: low wide camera inside futsal hall, beautiful polished WARM HONEY BROWN WOODEN PARQUET court floor filling lower two thirds with thin white court markings curving from left middle toward foreground. Dark deep blue painted walls, large windows at upper left, metal roof beams and warm overhead lights. White rectangular futsal goal at upper right-center against the back blue wall. One black-and-white pentagonal football sits in RIGHT FOREGROUND, fully within image near the right edge, with realistic warm wood reflection and contact shadow. Reference photograph is specifically a warm WOODEN indoor court, not a blue vinyl floor, not outdoor turf. Match framing and camera direction of reference. No humans, no shoes, no text, no labels, no interface, no borders. Natural photographic detail, warm wood contrasts with cool blue walls. Landscape high resolution 1536x1024.",
+        "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-0e338271-1fa0-4f2a-a9df-78ee6d1ebe11.png",
+        "actual_dimensions": [
+          1536,
+          1024
+        ]
+      }
     },
     {
       "name": "measurement",
@@ -363,6 +524,26 @@
         1536
       ],
       "hasAlpha": false
+    }
+  ],
+  "surface-corrections-prompts.json": [
+    {
+      "name": "surface-ag",
+      "prompt": "Use case: precise-object-edit. Recreate ONLY the photograph in the TOP RIGHT category card labelled RUMPUT TIRUAN / AG in this attached approved website reference. This card is below the main hero. Do not recreate page or typography. Exact composition: extreme macro camera at fibre-base height, tall individual bright green synthetic turf blades projecting upward among many prominent black rubber infill granules, large detailed rubber pellets dominate foreground and middle ground. Focus is on the black granules and long plastic green fibres, revealing artificial material. Shallow depth of field: a narrow out-of-focus strip of green at distant top, and small blurred white stadium-light bokeh along very top edge. NO distant wide football pitch, NO white pitch line, NO goal, NO ball, NO shoe, NO crowd stands. Match original tight macro detail and blue-cool stadium night light. Image content edge to edge with no text, no labels, no interface, no borders, no gradient added for text. Landscape high-resolution 1536x1024.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-d62059b9-9300-426c-87ab-1b6a8a621224.png",
+      "actual_dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "surface-ic",
+      "prompt": "Use case: precise-object-edit. Recreate ONLY the photograph in the LOWER RIGHT category card labelled INDOOR / IC in this approved website reference. Do not recreate webpage or typography. Exact scene and composition: low wide camera inside futsal hall, beautiful polished WARM HONEY BROWN WOODEN PARQUET court floor filling lower two thirds with thin white court markings curving from left middle toward foreground. Dark deep blue painted walls, large windows at upper left, metal roof beams and warm overhead lights. White rectangular futsal goal at upper right-center against the back blue wall. One black-and-white pentagonal football sits in RIGHT FOREGROUND, fully within image near the right edge, with realistic warm wood reflection and contact shadow. Reference photograph is specifically a warm WOODEN indoor court, not a blue vinyl floor, not outdoor turf. Match framing and camera direction of reference. No humans, no shoes, no text, no labels, no interface, no borders. Natural photographic detail, warm wood contrasts with cool blue walls. Landscape high resolution 1536x1024.",
+      "source": "C:\\Users\\user\\.codex\\generated_images\\01a17d22-e53d-7593-9a9f-e7eee441c92b\\exec-0e338271-1fa0-4f2a-a9df-78ee6d1ebe11.png",
+      "actual_dimensions": [
+        1536,
+        1024
+      ]
     }
   ]
 }
